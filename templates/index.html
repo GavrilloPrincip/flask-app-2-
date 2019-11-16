@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- font-awsome-->
+    <script src="https://kit.fontawesome.com/42d2b137be.js" crossorigin="anonymous"></script>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <!-- bootstrap css-->
+    <link rel="stylesheet" href="{{url_for('static', filename ='css/bootstrap.css')}}" type="text/css"/>
+    
+    <!--bootstrap js-->
+    <script src="{{url_for('static', filename='js/jquery.js')}}"></script>
+    <script src="{{url_for('static', filename='js/popper.js')}}"></script>
+    <script src="{{url_for('static', filename='js/bootstrap.js')}}"></script>
+    
+    <!-- main css-->
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}" type="text/css"/>
+    <title>Ea blog</title>
+</head>
+<body>
+<br>
+<br>
+<br>
+<br>
+<br>
+{% include "includes/navbar.html" %}
+{% block body %}
+
+{% endblock body %}
+    
+</body>
+</html>

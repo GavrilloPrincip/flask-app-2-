@@ -1,0 +1,16 @@
+{% extends "index.html" %}
+
+{% block body %}
+{% from "includes/formhelpers.html" import render_field %}
+<div class="container">
+
+<form method=post>
+<img width="20%" src="https://i.hizliresim.com/Or65g5.png"/>
+{{render_field(form.username, class='input',placeholder="username")}}
+{{ render_field(form.email, class='input',placeholder="email") }}
+{{ render_field(form.password, class='input',placeholder="password") }}
+{{ render_field(form.confirm, class='input',placeholder="confirm") }}
+<button class="btn btn-outline-warning btn-lg d-block mx-auto mb-3" type="submit">Kayıt Ol</button>
+</form>
+</div>
+{% endblock body %}
